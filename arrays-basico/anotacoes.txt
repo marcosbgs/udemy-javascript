@@ -1,0 +1,53 @@
+=> CRIAR ARRAYS
+    --> const livros = [' Harry Potter', ' O Sol é Para Todos', ' Flores Para Algernon', ' It - A Coisa', ' Misery']; --> FORMA LITERAL
+    --> const livros = new Array(' Harry Potter', ' O Sol é Para Todos', ' Flores Para Algernon', ' It - A Coisa', ' Misery'); --> CONSTRUTOR
+
+=> ADICIONAR ITENS 
+    --> nomeArray.push(); => ADICIONA NO FINAL DO ARRAY
+    --> nomeArray.unshift(); => ADICIONA NO INÍCIO DO ARRAY - ALTERA OS ÍNDICES DO ELEMENTOS DO ARRAY
+    --> nomeArray[4]; => SE O ARRAY POSSUIR 4 ÍNDICES [0, 1, 2 , 3], ADICIONA O ELEMENTO NO FINAL DO ÍNDICE
+
+=> REMOVE ITENS
+    --> nomeArray.pop(); => REMOVE O ÚLTIMO ELEMENTO DO ARRAY
+    --> nomeArray.shift(); => REMOVE O PRIMEIRO DO ARRAY - ALTERA OS ÍNDICES DOS ELEMENTOS DO ARRAY
+    --> delete nomeArray[2]; => REMOVE O ELEMENTO SEM ALTERAR OS ÍNDICES. O ÍNDICE FICARÁ VAZIO
+    --> const removido = livros.pop(); => REMOVE O ÚLTIMO ELEMENTO DO ARRAY E ADICIONA NA VARIÁVEL "removido"
+    --> nomeArray.splice(começa nesse elemento, quanto elementos); => REMOVE OS ELEMENTOS E RETORNA
+            const nomes = ['Maria', 'João', 'Eduardo', 'Gabriel', 'Júlia'];
+            const removidos = nomes.splice(3, 2);
+            console.log(nomes, removidos);
+
+            const nomes = ['Maria', 'João', 'Eduardo', 'Gabriel', 'Júlia'];
+            const removidos = nomes.splice(3, 1, 'Luiz', 'Vinicius'); => REMOVE 1 ELEMENTO A PARTIR DO ÍNDICE 3 (NESSE CASO, O PRÓPRIO ÍNDICE 3), E ADICIONA 'LUIZ' E 'VINICIUS' A PARTIR DO ÍNDICE 3. 
+            console.log(nomes, removidos); => [ 'Maria', 'João', 'Eduardo', 'Luiz', 'Vinicius', 'Júlia' ] [ 'Gabriel' ]
+
+=> FATIAR/CORTAR O ARRAY
+    --> nomeArray.slice(1, 3); => PEGA O ELEMENTO A PARTIR DO ÍNDICE 1 E VAI ATÉ O ELEMENTO DE ÍNDICE 2. O ÚLTIMO ÍNDICE NÃO É INCLUÍDO,NO CASO O 3
+
+=> EDITAR ITENS
+    --> nomeArray[1] = 'elemento2'; => EDITA O ELEMENTO;
+
+=> CONVERTER STRING EM ARRAY    
+    --> const nomeString = 'Marcos Vinicius Braga de Souza';
+    --> const nomeArray = nomeString.split(' '); => OS ELEMENTOS DO ARRAY SERÃO SEPARADOS POR ESPAÇO
+
+=> CONVERTER UM ARRAY EM UMA STRING
+    --> const nomeArray = ['Marcos', 'Vinicius', 'Braga', 'de', 'Souza'];
+    --> const nomeString = nomeArray.join(' '); => O SEPARADOR DAS STRINGS SERÁ UM ESPAÇO
+    --> const nomeString = nomeArray.join('/'); => O SEPARADOR DAS STRINGS SERÁ UMA BARRA
+
+=> CONCATENAR ARRAYS
+    --> CONCAT()
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        const arrayConcatenado = array1.concat(array2); => JUNTA DOIS OU MAIS ARRAYS
+    --> SPREAD ...
+        const array1 = [1, 2, 3];
+        const array2 = [4, 5, 6];
+        const arrayConcatenado = [...array1, 'Marcos', ...array2, ...[7, 8, 9]]; => QUANDO COLOCAR UM ARRAY LITERALMENTE, TEM QUE COLOCAR O SPREAD PARA ESPALHAR O ARRAY DENTRO DO NOVO ARRAY
+
+
+
+
+
+console.log(nomeArray.length); => MOSTRA O TAMANHO DO ARRAY. "NÚMERO DE ELEMENTOS"
