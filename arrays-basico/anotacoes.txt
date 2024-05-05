@@ -46,6 +46,10 @@
         const array2 = [4, 5, 6];
         const arrayConcatenado = [...array1, 'Marcos', ...array2, ...[7, 8, 9]]; => QUANDO COLOCAR UM ARRAY LITERALMENTE, TEM QUE COLOCAR O SPREAD PARA ESPALHAR O ARRAY DENTRO DO NOVO ARRAY
 
+=> FILTRAR ARRAYS
+    --> FILTER()
+        
+
 
 
 

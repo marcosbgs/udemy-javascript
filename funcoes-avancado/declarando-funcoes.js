@@ -1,5 +1,5 @@
 //Declaração de função (function hoisting)
-//a engine do JS eleva a função e as variaveis declaradas com VAR para o topo
+//a engine do JS eleva a função e as VARIÁVEIS DECLARADAS COM VAR para o topo
 //posso chamar a função antes de declarar
 
 function falaOi() {
@@ -9,12 +9,26 @@ function falaOi() {
 falaOi();
 
 //first-class objects - pode tratar as funções como dados. A função é um tipo de dado.
-//Function Expression
-const souUmDado = function nomeDaFuncao () {
+//FUNCTION EXPRESSION
+
+const nomeVariavel = function (PARAMETROS) {
+    console.log(PARAMETROS);
+}
+nomeVariavel('ARGUMENTOS');
+
+const souUmDado = function nomeDaFuncao () { //não é muito comum nome da função 
     console.log('Sou um dado.');
 };
 
 souUmDado();
+
+
+const souUmDado2 = function nomeDaFuncao2 () { //mais comum declarar sem o nome
+    console.log('Sou um dado 2.');
+};
+
+souUmDado();
+souUmDado2();
 
 //arrow function
 

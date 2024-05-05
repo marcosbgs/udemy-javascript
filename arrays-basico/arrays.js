@@ -17,7 +17,7 @@ const alunos = ['Marcos', 'João', 'Lucas', 'Joaquim']; //sempre que possível t
 
 //delete alunos[1]; //remove o elemento sem alterar os índices. O índice do elemento removido fica VAZIO
 
-console.log(alunos.length);
+//console.log(alunos.length);
 
 //alunos[2] = 'Vinicius'; //edita o elemento
 //alunos[4] = 'Victor'; //adiciona um elemento no final do array
@@ -26,3 +26,17 @@ console.log(alunos.length);
 
 //console.log(alunos[3]); // mostra o elemento de índice 3
 //console.log(alunos[1]);
+
+// let contador = 0;
+
+// while(contador < 12)
+// {
+//     console.log(contador);
+//     contador++;
+// }
+
+let contador = 0;
+do {
+    console.log(contador);
+    contador++;
+} while(contador < 12);
